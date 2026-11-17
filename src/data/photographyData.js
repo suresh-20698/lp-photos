@@ -1,0 +1,33 @@
+export const photographyData = {
+  brand: {
+    name: 'LP Photography',
+    tagline: 'Making Every Occasion Special',
+    subtitle: 'Wedding & Traditional Photography',
+    description: 'Specializing in grand wedding celebrations, sacred ceremonies, and timeless traditional photography.',
+    logo: '/images/logo.svg',
+    quote: "Let's Make Your Celebrations Memorable.",
+    whatsappUrl: 'https://wa.me/?text=Hello%20LP%20Photography,%20I%20would%20like%20to%20inquire%20about%20your%20photography%20services.',
+    instagramUrl: 'https://instagram.com/',
+  },
+  services: [
+    { id: 'wedding-events', title: 'Wedding Events' },
+    { id: 'destination-weddings', title: 'Destination Weddings' },
+    { id: 'baby-shower', title: 'Baby Shower' },
+    { id: 'name-ceremony', title: 'Name Ceremony' },
+    { id: 'puberty-ceremony', title: 'Puberty Ceremony' },
+    { id: 'housewarming', title: 'Housewarming' },
+    { id: 'corporate-events', title: 'Corporate Events' },
+    { id: 'college-events', title: 'College Events' },
+  ],
+  gallery: [
+    { id: 'img-1', src: '/images/img-1.jpeg', alt: 'LP Photography 1' },
+    { id: 'img-2', src: '/images/img-2.jpeg', alt: 'LP Photography 2' },
+    { id: 'img-3', src: '/images/img-3.jpeg', alt: 'LP Photography 3' },
+    { id: 'img-4', src: '/images/img-4.jpeg', alt: 'LP Photography 4' },
+    { id: 'img-5', src: '/images/img-5.jpeg', alt: 'LP Photography 5' },
+    { id: 'img-6', src: '/images/img-6.jpeg', alt: 'LP Photography 6' },
+    { id: 'img-7', src: '/images/img-7.jpeg', alt: 'LP Photography 7' },
+    { id: 'img-8', src: '/images/img-8.jpeg', alt: 'LP Photography 8' },
+    { id: 'img-9', src: '/images/img-9.jpeg', alt: 'LP Photography 9' },
+  ],
+}
