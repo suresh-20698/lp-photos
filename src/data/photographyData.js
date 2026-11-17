@@ -1,13 +1,11 @@
 export const photographyData = {
   brand: {
     name: 'LP Photography',
-    tagline: 'Making Every Occasion Special',
-    subtitle: 'Wedding & Traditional Photography',
-    description: 'Specializing in grand wedding celebrations, sacred ceremonies, and timeless traditional photography.',
+    tagline: 'Cinematic Weddings | Candid Stories 💍',
+    description: 'Let’s make your love story unforgettable ✨',
+    quote: "Let’s make your love story unforgettable ✨",
     logo: '/images/logo.svg',
-    quote: "Let's Make Your Celebrations Memorable.",
-    whatsappUrl: 'https://wa.me/?text=Hello%20LP%20Photography,%20I%20would%20like%20to%20inquire%20about%20your%20photography%20services.',
-    instagramUrl: 'https://instagram.com/',
+    instagramUrl: 'https://www.instagram.com/lp_photographytnj/',
   },
   services: [
     { id: 'wedding-events', title: 'Wedding Events' },
