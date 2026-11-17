@@ -21,7 +21,7 @@ export function StickyHeader({ brand }) {
           : '-translate-y-full opacity-0 pointer-events-none'
       }`}
     >
-      <header className="w-full bg-[#fefcf5]/92 backdrop-blur-md border-b border-[#214b38]/12">
+      <header className="w-full bg-[#fdfaf2]/95 backdrop-blur-md border-b border-[#d1bc8a]/35 shadow-xs">
         <div className="w-full max-w-[466px] mx-auto px-4 h-12 sm:h-13 flex items-center justify-center">
           {/* Centered Brand Emblem & Title (No buttons) */}
           <button
@@ -45,7 +45,7 @@ export function StickyHeader({ brand }) {
               </span>
               <span className="text-[#c4a87a] text-[7px] select-none">◆</span>
               <span className="text-[9.5px] uppercase tracking-[0.18em] text-[#063423]/65 font-medium">
-                Wedding &amp; Traditional
+                Cinematic Weddings &amp; Candid Stories  
               </span>
             </div>
           </button>

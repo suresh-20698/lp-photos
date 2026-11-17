@@ -3,7 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <title>LP Photography | Making Every Occasion Special</title>
+    <title>LP Photography | Cinematic Weddings & Candid Stories</title>
+
+    <!-- Preload critical brand & initial gallery images -->
+    <link rel="preload" as="image" href="/images/logo.svg" />
+    <link rel="preload" as="image" href="/images/img-1.jpg" fetchpriority="high" />
+    <link rel="preload" as="image" href="/images/img-2.jpg" />
+
+    <!-- Prefetch subsequent gallery images for instant display -->
+    <link rel="prefetch" as="image" href="/images/img-3.jpg" />
+    <link rel="prefetch" as="image" href="/images/img-4.jpg" />
+    <link rel="prefetch" as="image" href="/images/img-5.jpg" />
+    <link rel="prefetch" as="image" href="/images/img-6.jpg" />
+    <link rel="prefetch" as="image" href="/images/img-7.jpg" />
+    <link rel="prefetch" as="image" href="/images/img-8.jpg" />
+    <link rel="prefetch" as="image" href="/images/img-9.jpg" />
+    <link rel="prefetch" as="image" href="/images/img-10.jpg" />
+    <link rel="prefetch" as="image" href="/images/img-11.jpg" />
+    <link rel="prefetch" as="image" href="/images/img-12.jpg" />
 
     <!-- Favicons & App Icons from public/ -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -18,7 +35,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-[#fef9e8] text-[#1d1c12] antialiased selection:bg-[#bfedd3] selection:text-[#002114] min-h-screen flex flex-col justify-center items-center">
+  <body class="bg-[#faf4e4] bg-golden-dots text-[#1d1c12] antialiased selection:bg-[#bfedd3] selection:text-[#002114] min-h-screen flex flex-col justify-center items-center">
     <div id="root" class="w-full flex justify-center items-center"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

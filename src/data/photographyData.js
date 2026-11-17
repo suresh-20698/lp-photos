@@ -1,11 +1,19 @@
 export const photographyData = {
   brand: {
     name: 'LP Photography',
-    tagline: 'Cinematic Weddings | Candid Stories 💍',
-    description: 'Let’s make your love story unforgettable ✨',
-    quote: "Let’s make your love story unforgettable ✨",
+    description: 'Cinematic Weddings | Candid Stories 💍',
+    tagline: 'Let’s make your love story unforgettable ✨',
     logo: '/images/logo.svg',
+    email: 'lpphotography2020@gmail.com',
+    contacts: [
+      { name: 'G.Ram kumar', phone: '7418418491' },
+      { name: 'M.Prabhakaran', phone: '8098068909' },
+    ],
+    whatsappUrl:
+      'https://wa.me/917418418491?text=Hello%20LP%20Photography,%20I%20would%20like%20to%20inquire%20about%20your%20photography%20services.',
     instagramUrl: 'https://www.instagram.com/lp_photographytnj/',
+    driveUrl:
+      'https://drive.google.com/drive/folders/1q6rBOcNgxzlk1l_NrnyNX4U7ERcKgr5W',
   },
   services: [
     { id: 'wedding-events', title: 'Wedding Events' },
@@ -18,14 +26,17 @@ export const photographyData = {
     { id: 'college-events', title: 'College Events' },
   ],
   gallery: [
-    { id: 'img-1', src: '/images/img-1.jpeg', alt: 'LP Photography 1' },
-    { id: 'img-2', src: '/images/img-2.jpeg', alt: 'LP Photography 2' },
-    { id: 'img-3', src: '/images/img-3.jpeg', alt: 'LP Photography 3' },
-    { id: 'img-4', src: '/images/img-4.jpeg', alt: 'LP Photography 4' },
-    { id: 'img-5', src: '/images/img-5.jpeg', alt: 'LP Photography 5' },
-    { id: 'img-6', src: '/images/img-6.jpeg', alt: 'LP Photography 6' },
-    { id: 'img-7', src: '/images/img-7.jpeg', alt: 'LP Photography 7' },
-    { id: 'img-8', src: '/images/img-8.jpeg', alt: 'LP Photography 8' },
-    { id: 'img-9', src: '/images/img-9.jpeg', alt: 'LP Photography 9' },
+    { id: 'img-1', src: '/images/img-1.jpg', alt: 'LP Photography 1' },
+    { id: 'img-2', src: '/images/img-2.jpg', alt: 'LP Photography 2' },
+    { id: 'img-3', src: '/images/img-3.jpg', alt: 'LP Photography 3' },
+    { id: 'img-4', src: '/images/img-4.jpg', alt: 'LP Photography 4' },
+    { id: 'img-5', src: '/images/img-5.jpg', alt: 'LP Photography 5' },
+    { id: 'img-6', src: '/images/img-6.jpg', alt: 'LP Photography 6' },
+    { id: 'img-7', src: '/images/img-7.jpg', alt: 'LP Photography 7' },
+    { id: 'img-8', src: '/images/img-8.jpg', alt: 'LP Photography 8' },
+    { id: 'img-9', src: '/images/img-9.jpg', alt: 'LP Photography 9' },
+    { id: 'img-10', src: '/images/img-10.jpg', alt: 'LP Photography 10' },
+    { id: 'img-11', src: '/images/img-11.jpg', alt: 'LP Photography 11' },
+    { id: 'img-12', src: '/images/img-12.jpg', alt: 'LP Photography 12' },
   ],
 }

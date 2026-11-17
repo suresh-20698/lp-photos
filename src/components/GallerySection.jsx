@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 export function GallerySection({ items = [] }) {
+  const [loadedImages, setLoadedImages] = useState({})
+
+  // Actively prefetch all gallery images into the browser cache
+  useEffect(() => {
+    if (!items || items.length === 0) return
+
+    items.forEach((item) => {
+      if (item?.src) {
+        // High priority eager prefetch for next items, idle prefetch for rest
+        const img = new Image()
+        img.src = item.src
+      }
+    })
+  }, [items])
+
   if (!items || items.length === 0) return null
 
   return (
@@ -21,17 +36,20 @@ export function GallerySection({ items = [] }) {
             className="p-2 sm:p-2.5 bg-[#fcf9ef] rounded-xl border border-[#214b38]/12 shadow-[0_4px_16px_-2px_rgba(6,52,35,0.06),0_1px_3px_rgba(6,52,35,0.03)] transition-all duration-300 hover:shadow-[0_8px_24px_-4px_rgba(6,52,35,0.12)] group"
           >
             {/* Inner Image Mounting Frame */}
-            <div className="relative w-full rounded-lg overflow-hidden bg-[#ece5d4] shadow-inner">
+            <div className="relative w-full rounded-lg overflow-hidden bg-[#ece5d4] shadow-inner min-h-[220px]">
               <img
                 src={item.src}
                 alt={item.alt || `LP Photography work ${index + 1}`}
-                className="w-full h-auto object-cover group-hover:scale-[1.015] transition-transform duration-500 ease-out select-none"
+                className={`w-full h-auto object-cover group-hover:scale-[1.015] transition-all duration-500 ease-out select-none ${
+                  loadedImages[item.id] || index < 2 ? 'opacity-100' : 'opacity-0'
+                }`}
                 loading={index < 2 ? 'eager' : 'lazy'}
+                fetchPriority={index < 2 ? 'high' : 'auto'}
+                decoding={index < 2 ? 'sync' : 'async'}
+                onLoad={() =>
+                  setLoadedImages((prev) => ({ ...prev, [item.id]: true }))
+                }
               />
-              {/* Archival Exhibition Plate Badge */}
-              <div className="absolute top-2.5 right-2.5 bg-[#063423]/80 backdrop-blur-md text-[#fef9e8] text-[9px] font-semibold tracking-[0.2em] px-2.5 py-0.5 rounded-full border border-[#d1bc8a]/35 uppercase select-none shadow-sm tabular-nums">
-                PLATE {String(index + 1).padStart(2, '0')} / {String(items.length).padStart(2, '0')}
-              </div>
             </div>
           </div>
         ))}

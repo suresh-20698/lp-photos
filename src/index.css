@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @theme {
+  --color-fg: #063423;
+  --color-muted-foreground: #5c645e;
   --color-primary-fixed: #bfedd3;
   --color-tertiary-container: #3b4734;
   --color-tertiary-fixed-dim: #becbb2;
@@ -94,6 +96,26 @@
   }
   .font-label-ui {
     font-family: var(--font-sans);
+  }
+
+  /* Golden Dots & Atmospheric Champagne Shades */
+  .bg-golden-dots {
+    background-color: #faf4e4;
+    background-image: 
+      radial-gradient(ellipse 80% 50% at 50% 0%, rgba(212, 175, 55, 0.18) 0%, transparent 70%),
+      radial-gradient(ellipse 80% 50% at 50% 100%, rgba(196, 168, 122, 0.14) 0%, transparent 70%),
+      radial-gradient(rgba(180, 142, 75, 0.28) 1.2px, transparent 1.2px);
+    background-size: 100% 100%, 100% 100%, 22px 22px;
+    background-position: 0 0, 0 0, 0 0;
+  }
+
+  .bg-card-golden-shades {
+    background-color: #fdfaf2;
+    background-image: 
+      radial-gradient(ellipse 70% 30% at 50% 0%, rgba(212, 175, 55, 0.10) 0%, transparent 60%),
+      radial-gradient(rgba(180, 142, 75, 0.16) 1px, transparent 1px);
+    background-size: 100% 100%, 18px 18px;
+    background-position: 0 0, 0 0;
   }
 }
 

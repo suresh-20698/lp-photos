@@ -9,7 +9,7 @@ export function ServicesSection({ services }) {
         Our Services
       </h2>
       <p className="text-xs text-[#414943]/80 font-normal mb-3.5">
-        Wedding &amp; Traditional Celebrations
+        Cinematic Weddings &amp; Candid Stories  
       </p>
 
       {/* Services List Panel */}
