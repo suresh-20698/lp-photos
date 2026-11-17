@@ -6,8 +6,8 @@ export const photographyData = {
     logo: '/images/logo.svg',
     email: 'lpphotography2020@gmail.com',
     contacts: [
-      { name: 'G.Ram kumar', phone: '7418418491' },
       { name: 'M.Prabhakaran', phone: '8098068909' },
+      { name: 'G.Ram kumar', phone: '7418418491' },
     ],
     whatsappUrl:
       'https://wa.me/917418418491?text=Hello%20LP%20Photography,%20I%20would%20like%20to%20inquire%20about%20your%20photography%20services.',
